@@ -3,35 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sitewide.css">
     <title>My Portolio</title>
+    <link rel="stylesheet" href="resume.css">
 </head>
 <div>
-    <a href="index.html">Home</a> |
-    <a href="resume.html">Resume</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="color-theory-overview.html">Color Theory Overview</a> |
-    <a href="typography-overview.html">Typography Overview</a> |
-    <a href="contact.html">Contact</a>
+     <nav class="navbar">
+        <ul class="nav-menu">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="resume.html">Resume</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+            <li class="dropdown">
+                <a href="color-theory-overview.html">Color Theory Overview</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Color%20Theory%20Overview/color-themes.html">Color Themes</a></li>
+                    <li><a href="Color%20Theory%20Overview/color-theory-article.html">Color Theory Article</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="typography-overview.html">Typography Overview</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Typography%20Overview/font-types.html">Typography Font Types</a></li>
+                    <li><a href="Typography%20Overview/typography-article.html">Typography Article</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
 
 </div>
-    <h1>Resume</h1>
+
+<body>
+
+ <div class="resume">
+
+    <header class= "header">
+     <h1>Vanessa Berghoff</h1>
+     <p>Missoula, MT • email@example.com • (555) 555.5555</p>
+    </header>
+
+    <section class="section">
     <h2>Education</h2>
-    <h3>Bachelor of Science in Human & <br>
-        Organizational Development, Vanderbilt University</h3>
-    <p>Aug 2014 - May 2018</p>
+    <div class="item">
+        <h3>Bachelor of Science in Human & <br>
+        Organizational Development</h3>
+        <p class="company">Vanderbilt University, Nashville, TN</p>   
+        <p class="dates">Aug 2014 - May 2018</p>
+     </div>
+    </section>
     
+    <section class="section">
     <h2>Experience</h2>
-    <h3>Learning & Development</h3>
-    <p> April 2021 - Present</p>
-    <p> Washington, D.C., USA</p>
-    <ul>
-        <li>Define and document core processes for training programs aligned with organizational goals</li>
-        <li>Develop eLearning content using Adobe Creative Suite and Articulate 360</li>
-        <li>Partner with subject matter experts to create engaging and effective training materials</li>
+    <div class="item">
+        <h3>Learning & Development</h3>
+        <p class="company">Washington, D.C., USA</p>
+        <p class="dates">April 2021 - Present</p>
+        <ul>
+            <li>Define and document core processes for training programs aligned with organizational goals</li>
+            <li>Develop eLearning content using Adobe Creative Suite and Articulate 360</li>
+            <li>Partner with subject matter experts to create engaging and effective training materials</li>
     </ul>
+    </div>
+    </section>
+
+    <section class="section">
     <h2>Skills</h2>
-    <ul>
+    <ul class="skills">
         <li>Graphic Design: Adobe Creative Cloud (Photoshop, Animate)</li>
         <li>Web Development: HTML</li>
         <li>eLearning: Miro, Canva, Articulate 360, LMS, SCORM</li>
     </ul>
+    </section>
+</div>
+
+</body>
+
+</html>

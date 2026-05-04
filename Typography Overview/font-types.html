@@ -3,17 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sitewide.css">
+        <link rel="stylesheet" href="../color-and-type.css">
     <title>My Portolio</title>
 </head>
 <div>
-    <a href="../index.html">Home</a> |
-    <a href="../resume.html">Resume</a> |
-    <a href="../projects.html">Projects</a> |
-    <a href="../color-theory-overview.html">Color Theory Overview</a> |
-    <a href="../typography-overview.html">Typography Overview</a> |
-    <a href="../contact.html">Contact</a>
+   <nav class="navbar">
+        <ul class="nav-menu">
+
+            <li><a href="../index.html">Home</a></li>
+
+            <li><a href="../resume.html">Resume</a></li>
+
+            <li><a href="../projects.html">Projects</a></li>
+
+            <li class="dropdown">
+                <a href="../color-theory-overview.html">Color Theory Overview</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Color%20Theory%20Overview/color-themes.html">Color Themes</a></li>
+                    <li><a href="../Color%20Theory%20Overview/color-theory-article.html">Color Theory Article</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="../typography-overview.html">Typography Overview</a>
+                <ul class="dropdown-menu">
+                    <li><a href="font-types.html">Typography Font Types</a></li>
+                    <li><a href="typography-article.html">Typography Article</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
 
 </div>
+<div class="wrapper">
+<article>
+    <div class="text-box">
 <h1> Font Types Article</h1>
 <p> Within typography, there are different categories of font types, each with distinct characteristics and uses. 
     Understanding these differences is crucial for effective design and communication. Once you learn more about each category,
@@ -32,3 +58,6 @@ make your own informed decisions about font selection for your designs.</p>
 <p>This font is called Retros, which can be downloaded from Adobe Fonts <a href="https://fonts.adobe.com/fonts/retros" target="_blank">here</a>.</p>
 <img src="Images/sans-serif-font-2.png" alt="Sans-Serif Font Retros" width="300">
 <img src="Images/Sans-serif-font-1.png" alt="Sans-Serif Font Retros" width="300">
+</div>
+</article>
+</div>

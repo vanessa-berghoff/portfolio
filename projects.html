@@ -3,24 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sitewide.css">
+     <style>
+    .image-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: left;
+      flex-wrap: wrap;
+    }
+
+    .image-item {
+      width: 250px;
+      text-align: center;
+    }
+
+    .image-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .image-item p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: text-decoration 0.2s ease;
+    }
+
+    .image-item p:hover {
+      text-decoration: underline;
+    }
+
+    .image-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    .image-item a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+
     <title>My Portolio</title>
 </head>
 <div>
-    <a href="index.html">Home</a> |
-    <a href="resume.html">Resume</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="color-theory-overview.html">Color Theory Overview</a> |
-    <a href="typography-overview.html">Typography Overview</a> |
-    <a href="contact.html">Contact</a>
+ <nav class="navbar">
+        <ul class="nav-menu">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="resume.html">Resume</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+            <li class="dropdown">
+                <a href="color-theory-overview.html">Color Theory Overview</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Color%20Theory%20Overview/color-themes.html">Color Themes</a></li>
+                    <li><a href="Color%20Theory%20Overview/color-theory-article.html">Color Theory Article</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="typography-overview.html">Typography Overview</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Typography%20Overview/font-types.html">Typography Font Types</a></li>
+                    <li><a href="Typography%20Overview/typography-article.html">Typography Article</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
 
 </div>
+<main>
 <h1>Photoshop Projects</h1>
-<div>
-    <a href="Projects/vogue.html">Digital Cover</a> |
-    <a href="Projects/brand.html">Branding Package</a> 
-</div> 
-<h1>Animate Projects</h1>
-<div>
-    <a href="Projects/banner.html">Interactive Banner</a> |
-    <a href="Projects/productad.html">Product Ad</a>
+
+<div class="image-grid">
+  <div class="image-item">
+    <a href="Projects/vogue.html">
+      <img src="Projects/Images/digital-magazine-cover.png" alt="Digital Magazine Cover">
+    </a>
+    <p><a href="Projects/vogue.html">Digital Magazine Cover</a></p>
+  </div>
+
+  <div class="image-item">
+    <a href="Projects/brand.html">
+    <img src="Projects/Images/banner-tile.png" alt="Branding Package">
+    </a>
+    <p><a href="Projects/brand.html">Branding Package</a></p>
+  </div>
+
 </div>
+ 
+<h1>Animate Projects</h1>
+
+
+<div class="image-grid">
+  <div class="image-item">
+    <a href="Projects/banner.html">
+    <img src="Projects/Images/ski.png" alt="Interactive Banner">
+    </a>
+    <p><a href="Projects/banner.html">Interactive Banner</a></p>
+  </div>
+
+  <div class="image-item">
+    <a href="Projects/productad.html">
+    <img src="Projects/Images/flowers.png" alt="Product Ad">
+  </a>
+    <p><a href="Projects/productad.html">Product Ad</a></p>
+  </div>
+</div>
+</main>

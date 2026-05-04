@@ -3,21 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sitewide.css">
+        <link rel="stylesheet" href="color-and-type.css">
     <title>My Portolio</title>
 </head>
 <div>
-    <a href="index.html">Home</a> |
-    <a href="resume.html">Resume</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="color-theory-overview.html">Color Theory Overview</a> |
-    <a href="typography-overview.html">Typography Overview</a> |
-    <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <ul class="nav-menu">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="resume.html">Resume</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+            <li class="dropdown">
+                <a href="color-theory-overview.html">Color Theory Overview</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Color%20Theory%20Overview/color-themes.html">Color Themes</a></li>
+                    <li><a href="Color%20Theory%20Overview/color-theory-article.html">Color Theory Article</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="typography-overview.html">Typography Overview</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Typography%20Overview/font-types.html">Typography Font Types</a></li>
+                    <li><a href="Typography%20Overview/typography-article.html">Typography Article</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
 </div>
+<div class="wrapper">
+<article>
+    <div class="text-box">
 <h1>Typography Overview</h1>
 <p> Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. It involves selecting typefaces, point sizes, line heights, and spacing to create a harmonious and effective visual presentation.</p>
 <p> To explore more about typography, use the links below.</p>
 <p> <a href="Typography%20Overview/font-types.html">Typography Font Types</a> |
 <a href="Typography%20Overview/typography-article.html">Typography Article</a></p>
+    </div>
+</article>
+<main>
 <p>Below are key elements of typography:</p>
 
 <ol>
@@ -35,3 +64,5 @@
 </ol>
 
 <p> Source: <a href="https://www.ed2go.com/courses/computer-science/programming/ctp/web-design-professional">Ed2go Web Design Professional Course</a></p>
+</main>
+</div>
