@@ -26,14 +26,55 @@ body {
 
 .section {
     margin-bottom: 30px;
+
 }
 
+/* Dropdown Arrow Adds */
 .section h2 {
     margin-bottom: 10px;
     font-size: 1.4rem;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.4rem;
+    position: relative;
 }
+
+.arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    padding: 4px 6px; 
+    border-radius: 4px;
+}
+
+.section h2:hover .arrow {
+    background-color: rgba(0, 0, 0, 0.08); 
+    transition: background-color 0.25s ease;
+}
+
+.section-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 2000px; 
+}
+
+.section.collapsed .section-content {
+    max-height: 0;
+}
+
+.section.collapsed .arrow {
+    transform: rotate(0deg);
+}
+
+.section:not(.collapsed) .arrow {
+    transform: rotate(90deg);
+}
+/* End of Dropdown Arrow Adds*/
 
 .item {
     margin-bottom: 20px;

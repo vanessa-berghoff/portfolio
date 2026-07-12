@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sitewide.css">
-        <link rel="stylesheet" href="color-and-type.css">
+    <link rel="stylesheet" href="color-and-type.css">
+    <script src="sitewide.js"></script>
     <title>My Portolio</title>
 </head>
 <div>
@@ -15,7 +16,14 @@
 
             <li><a href="resume.html">Resume</a></li>
 
-            <li><a href="projects.html">Projects</a></li>
+            <li class="dropdown">
+                <a href="../projects.html">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Projects/vogue.html">Digital Magazine Cover Design</a></li>
+                    <li><a href="../Projects/brand.html">Branding Package</a></li>
+                    <li><a href="../Projects/banner.html">Interactive Banner</a></li>
+                    <li><a href="../Projects/productad.html">Product Ad</a></li>
+                </ul>
 
             <li class="dropdown">
                 <a href="color-theory-overview.html">Color Theory Overview</a>
@@ -32,7 +40,14 @@
                     <li><a href="Typography%20Overview/typography-article.html">Typography Article</a></li>
                 </ul>
             </li>
-
+             <li class="dropdown theme-dropdown">
+                 <a href="#">Theme</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="theme-option" data-theme="light">☀︎ Light</a></li>
+                    <li><a href="#" class="theme-option" data-theme="dark">☾ Dark</a></li>
+                </ul>
+            
+            </li>
         </ul>
     </nav>
 </div>
