@@ -3,6 +3,12 @@
   --text: #333;
   --accent: #c8a2ff;
   --max-width: 800px; 
+  --textbox-bg: #ffffff;
+}
+
+.dark-mode {
+  --textbox-bg: #2a2a2a; 
+  --textbox-text: #ffffff; 
 }
 
 body {
@@ -52,7 +58,8 @@ img {
 }
 
 .text-box {
-  background: white;
+  background: var(--textbox-bg);
+  color: var(--textbox-text);
   padding: 20px;
   border-radius: 12px;
   width: 100%; 

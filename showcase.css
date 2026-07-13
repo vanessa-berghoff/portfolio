@@ -6,6 +6,11 @@
   --max-width: 800px;
 }
 
+.dark-mode {
+  --text: white; 
+  --bg: #000000; 
+}
+
 body {
   background: var(--bg);
   color: var(--text);
