@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sitewide.css">
         <link rel="stylesheet" href="../showcase.css">
-   <script src="sitewide.js"></script>
+   <script src="../sitewide.js"></script>
 
         <title>My Portolio</title>
 </head>
@@ -44,10 +44,22 @@
              <li class="dropdown theme-dropdown">
                  <a href="#">Theme</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="theme-option" data-theme="light">☀︎ Light</a></li>
-                    <li><a href="#" class="theme-option" data-theme="dark">☾ Dark</a></li>
+                    <li class="flyout">
+                        <a href="#">Mode</a>
+                        <ul class="flyout-menu">
+                            <li><a href="#" class="theme-option" data-theme="light">Light</a></li>
+                            <li><a href="#" class="theme-option" data-theme="dark">Dark</a></li>
+                        </ul>
+                    </li>
+                    <li class="flyout">
+                        <a href="#">Font Size</a>
+                        <ul class="flyout-menu">
+                            <li><a href="#" class="font-size-option" data-size="small">Small</a></li>
+                            <li><a href="#" class="font-size-option" data-size="medium">Medium</a></li>
+                            <li><a href="#" class="font-size-option" data-size="large">Large</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            
             </li>
         </ul>
     </nav>

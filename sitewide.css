@@ -12,6 +12,18 @@ body.dark-mode {
     --section-bg: #1e1e1e;
 }
 
+body.small-font {
+    font-size: 14px;
+}
+
+body.medium-font {
+    font-size: 16px;
+}
+
+body.large-font {
+    font-size: 20px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Georgia", serif;
 }
@@ -88,11 +100,13 @@ header h1 {
     background-color: #1a1a1a;
     list-style: none;
     min-width: 180px;
+    padding: 0;
+    margin: 0;
 }
 
 .dropdown-menu li a {
     display: block;
-    padding: 12px 5px;
+    padding: 12px 15px;
     color: white;
     text-decoration: none;
 }
@@ -101,7 +115,50 @@ header h1 {
     color: #cccbce;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover > .dropdown-menu {
     display: block;
 }
 
+.flyout {
+    position: relative;
+}
+
+.flyout-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #333;
+    list-style: none;
+    min-width: 140px;
+    padding: 0;
+    margin: 0;
+}
+
+.flyout:hover > .flyout-menu {
+    display: block;
+}
+
+.flyout-menu li a:hover {
+    background-color: #444;
+}
+
+.theme-option[data-theme="light"]::before {
+    content: "☀︎ ";
+}
+
+.theme-option[data-theme="dark"]::before {
+    content: "☾ ";
+}
+
+.font-size-option[data-size="small"] {
+    font-size: 14px;
+}
+
+.font-size-option[data-size="medium"] {
+    font-size: 16px;
+}
+
+.font-size-option[data-size="large"] {
+    font-size: 20px;
+}
